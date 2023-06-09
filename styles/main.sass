@@ -1,0 +1,59 @@
+@import mixins
+@import alert
+@import errorAlert
+
+*
+	margin: 0
+	padding: 0
+	box-sizing: border-box
+
+.container
+	padding: 30px
+
+.user
+	display: flex
+	justify-content: space-between
+	padding: 10px
+	&__container
+		width: 800px
+		min-height: 500px
+		background: $green
+		margin-inline: auto
+		padding: 10px
+		border-radius: 10px
+	&__info
+		display: flex
+		+width(300px)
+		border: 1px solid black
+		background: $beige
+		border-radius: 10px
+	&__name
+		display: flex
+		font-size: 18px
+		font-weight: bold
+		margin-right: auto
+		align-items: center
+		justify-content: center
+		padding: 10px
+
+.form
+	&__input
+		width: 100%
+		border: 1px solid black
+		border-radius: 10px
+		min-height: 30px
+	&__container
+		display: flex
+		justify-content: space-between
+		padding: 10px
+
+.message
+	&__paragraph
+		background: $beige
+		border: 1px solid black
+		border-radius: 15px
+		word-wrap: break-word
+		padding: 10px
+		margin: 10px
+	&__user
+		font-weight: bold

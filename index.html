@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/loader.css">
+	<script src="js/utils.js"></script>
+	<title>Chat</title>
+</head>
+
+<body>
+	<div id="preloader">
+		<div class="loader">Loading...</div>
+	</div>
+
+	<div class="overlay"></div>
+	<div class="alert">
+		<p class="alert__title"></p>
+		<button class="alert__btn">okay</button>
+	</div>
+
+	<div class="info__overlay"></div>
+	<div class="info"></div>
+
+	<div class="container">
+		<div class="user__container">
+			<div class="user">
+				<div class="user__info">
+					<p class="user__name"></p>
+					<button class="user__edit button">Изменить</button>
+				</div>
+				<button class="user__follow button">Подписаться</button>
+			</div>
+			<form>
+				<div class="form__container">
+					<input class="form__input" type="text" id="message" placeholder="Сообщение" required>
+					<button class="form__button button" type="submit">Отправить сообщение</button>
+				</div>
+			</form>
+
+			<div class="message__container" id="message-container"></div>
+		</div>
+	</div>
+	<script src="js/errorAlert.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
